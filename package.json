@@ -14,7 +14,7 @@
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "typedoc",
-    "serve-docs":"pnpm dlx serve function-docs"
+    "serve-docs": "pnpm dlx serve function-docs"
   },
   "repository": {
     "type": "git",
@@ -38,5 +38,10 @@
   },
   "dependencies": {
     "vitest": "^0.34.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "get-func-name@<2.0.1": ">=2.0.1"
+    }
   }
 }

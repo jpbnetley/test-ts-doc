@@ -8,18 +8,27 @@ on:
 concurrency:
   group: ${{ github.ref }}-docs
 
+env:
+  node_version: 18
+
 jobs:
   generate-docs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - name: Use Node.js ${{ env.node_version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node_version }}
+          cache: 'pnpm'
       - name: install
-        run: npm ci
+        run: pnpm i
 
       - name: Build docs
-        run: npm run docs
+        run: pnpm run docs
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

@@ -1,1 +1,1 @@
-export { f1 } from './f1'
+export { f1 } from './f1/index.js'

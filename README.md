@@ -9,3 +9,23 @@ test documentation generation
 # Requirements
 - nodejs
 - pnpm package manager
+# Instructions
+## Running the project
+```sh
+pnpm run dev
+```
+
+## Building the project
+```sh
+pnpm run build
+```
+
+## Generating the docs
+```sh
+pnpm run docs
+```
+
+## Serve the generated docs
+```sh
+pnpm run serve-docs
+```

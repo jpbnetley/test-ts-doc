@@ -25,7 +25,7 @@ jobs:
           node-version: ${{ env.node_version }}
           cache: 'pnpm'
       - name: install
-        run: pnpm ci
+        run: pnpm i
 
       - name: Build docs
         run: pnpm run docs

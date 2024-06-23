@@ -9,7 +9,7 @@ concurrency:
   group: ${{ github.ref }}-docs
 
 env:
-  node_version: 18
+  node_version: 20
 
 jobs:
   generate-docs:
@@ -20,7 +20,7 @@ jobs:
         with:
           version: latest
       - name: Use Node.js ${{ env.node_version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node_version }}
           cache: 'pnpm'
@@ -28,7 +28,7 @@ jobs:
         run: pnpm i
 
       - name: Build docs
-        run: pnpm run docs
+        run: pnpm run build:docs
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

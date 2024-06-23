@@ -10,11 +10,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
+    "build:docs": "typedoc",
     "check": "tsc --noEmit",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "typedoc",
-    "serve-docs": "pnpm dlx serve function-docs"
+    "serve:docs": "vite function-docs"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     "vite": "^4.5.3"
   },
   "dependencies": {
-    "vitest": "^0.34.6"
+    "vitest": "^1.6.0"
   },
   "pnpm": {
     "overrides": {

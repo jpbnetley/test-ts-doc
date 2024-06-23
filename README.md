@@ -22,10 +22,10 @@ pnpm run build
 
 ## Generating the docs
 ```sh
-pnpm run docs
+pnpm run build:docs
 ```
 
 ## Serve the generated docs
 ```sh
-pnpm run serve-docs
+pnpm run serve:docs
 ```

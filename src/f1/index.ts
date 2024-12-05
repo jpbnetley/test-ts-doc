@@ -11,3 +11,10 @@ export const f1 = (label: string): void => console.log(label)
  * @returns {void}
  */
 export const f2 = (value: number): void => console.log(value);
+
+/**
+ * logs f3
+ * @param value 
+ * @returns 
+ */
+export const f3 = (value: number): void => console.log(value);

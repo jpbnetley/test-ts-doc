@@ -13,7 +13,7 @@
     "build:docs": "typedoc",
     "check": "tsc --noEmit",
     "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest --run --passWithNoTests",
     "serve:docs": "vite function-docs"
   },
   "repository": {
@@ -30,14 +30,14 @@
   "devDependencies": {
     "@parcel/packager-ts": "^2.13.3",
     "@parcel/transformer-typescript-types": "^2.13.3",
-    "@types/node": "^22.12.0",
+    "@types/node": "^22.13.1",
     "parcel": "^2.13.3",
     "typedoc": "^0.27.6",
     "typescript": "^5.7.3",
-    "vite": "^6.0.1"
+    "vite": "^6.1.0"
   },
   "dependencies": {
-    "vitest": "^1.6.0"
+    "vitest": "^3.0.5"
   },
   "pnpm": {
     "overrides": {

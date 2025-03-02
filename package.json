@@ -30,21 +30,22 @@
   "devDependencies": {
     "@parcel/packager-ts": "^2.13.3",
     "@parcel/transformer-typescript-types": "^2.13.3",
-    "@types/node": "^22.13.4",
+    "@types/node": "^22.13.8",
     "parcel": "^2.13.3",
-    "typedoc": "^0.27.7",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.0"
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
   },
   "dependencies": {
-    "vitest": "^3.0.6"
+    "vitest": "^3.0.7"
   },
   "pnpm": {
     "overrides": {
       "get-func-name@<2.0.1": ">=2.0.1"
     },
     "onlyBuiltDependencies": [
-      "@swc/core"
+      "@swc/core",
+      "esbuild"
     ]
   },
   "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"

@@ -9,7 +9,7 @@ concurrency:
   group: ${{ github.ref }}-docs
 
 env:
-  node_version: 20
+  node_version: 22
 
 jobs:
   generate-docs:

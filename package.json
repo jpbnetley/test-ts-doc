@@ -30,11 +30,11 @@
   "devDependencies": {
     "@parcel/packager-ts": "^2.14.4",
     "@parcel/transformer-typescript-types": "^2.14.4",
-    "@types/node": "^22.13.17",
+    "@types/node": "^22.14.0",
     "parcel": "^2.14.4",
-    "typedoc": "^0.28.1",
-    "typescript": "^5.8.2",
-    "vite": "^6.2.4"
+    "typedoc": "^0.28.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5"
   },
   "dependencies": {
     "vitest": "^3.1.1"

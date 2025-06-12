@@ -18,3 +18,10 @@ export const f2 = (value: number): void => console.log(value);
  * @returns 
  */
 export const f3 = (value: number): void => console.log(value);
+
+/**
+ * logs f4
+ * @param value 
+ * @returns 
+ */
+export const f4 = (value: number): void => console.log(value);

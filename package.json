@@ -28,25 +28,21 @@
   },
   "homepage": "https://github.com/jpbnetley/test-ts-doc#readme",
   "devDependencies": {
-    "@parcel/packager-ts": "^2.14.4",
-    "@parcel/transformer-typescript-types": "^2.14.4",
-    "@types/node": "^22.14.0",
-    "parcel": "^2.14.4",
-    "typedoc": "^0.28.2",
+    "@types/node": "^22.15.31",
+    "typedoc": "^0.28.5",
     "typescript": "^5.8.3",
-    "vite": "^6.2.7"
+    "vite": "^6.3.5"
   },
   "dependencies": {
-    "vitest": "^3.1.1"
+    "vitest": "^3.2.3"
   },
   "pnpm": {
     "overrides": {
       "get-func-name@<2.0.1": ">=2.0.1"
     },
     "onlyBuiltDependencies": [
-      "@swc/core",
       "esbuild"
     ]
   },
-  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808"
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }

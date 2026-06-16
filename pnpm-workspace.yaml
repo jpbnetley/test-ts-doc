@@ -1,0 +1,6 @@
+overrides:
+  get-func-name@<2.0.1: ">=2.0.1"
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - esbuild@0.28.1

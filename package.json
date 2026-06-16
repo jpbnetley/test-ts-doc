@@ -2,47 +2,35 @@
   "name": "test-ts-doc",
   "version": "1.0.0",
   "description": "test documentation generation",
-  "source": "src/index.ts",
-  "main": "dist/ts-doc.umd.cjs",
-  "module": "dist/ts-doc.umd.cjs",
-  "types": "dist/types.d.ts",
+  "keywords": [],
+  "homepage": "https://github.com/jpbnetley/test-ts-doc#readme",
+  "bugs": {
+    "url": "https://github.com/jpbnetley/test-ts-doc/issues"
+  },
+  "license": "ISC",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpbnetley/test-ts-doc.git"
+  },
   "type": "module",
+  "main": "dist/ts-doc.umd.cjs",
+  "types": "dist/types.d.ts",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && tsc",
-    "build:docs": "typedoc",
+    "build": "typedoc",
     "check": "tsc --noEmit",
     "tsc": "tsc",
     "test": "vitest --run --passWithNoTests",
     "serve:docs": "vite function-docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jpbnetley/test-ts-doc.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jpbnetley/test-ts-doc/issues"
-  },
-  "homepage": "https://github.com/jpbnetley/test-ts-doc#readme",
-  "devDependencies": {
-    "@types/node": "^24.12.2",
-    "typedoc": "^0.28.18",
-    "typescript": "^6.0.2",
-    "vite": "^8.0.7"
-  },
   "dependencies": {
-    "vitest": "^4.1.3"
+    "vitest": "^4.1.9"
   },
-  "pnpm": {
-    "overrides": {
-      "get-func-name@<2.0.1": ">=2.0.1"
-    },
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "typedoc": "^0.28.19",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
   },
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319"
+  "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620"
 }

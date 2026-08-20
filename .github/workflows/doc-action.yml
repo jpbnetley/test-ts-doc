@@ -9,14 +9,14 @@ concurrency:
   group: ${{ github.ref }}-docs
 
 env:
-  node_version: 24
+  node_version: 26
 
 jobs:
   generate-docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v5
+      - uses: pnpm/action-setup@v6
 
       - name: Use Node.js ${{ env.node_version }}
         uses: actions/setup-node@v6

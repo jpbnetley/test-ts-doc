@@ -18,7 +18,7 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "build": "typedoc",
-    "check": "tsc --noEmit",
+    "tsc:check": "tsc --noEmit",
     "tsc": "tsc",
     "test": "vitest --run --passWithNoTests",
     "serve:docs": "vite function-docs"
